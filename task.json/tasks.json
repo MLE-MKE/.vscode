@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-IC:/path_to_wxWidgets/include",
+          "-LC:/path_to_wxWidgets/lib",
+          "main.cpp",
+          "-o",
+          "ToDoApp",
+          "-lwxmsw31u_core", "-lwxbase31u", "-lwxpng", "-lwxzlib"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
